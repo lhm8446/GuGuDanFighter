@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bit2016.gugudanfighter.GameActivity">
+
+    <TextView
+        android:text="맞춘개수 :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:text="30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restTime"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+    <TextView
+        android:text="남은시간 : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/restTime" />
+
+    <TextView
+        android:text="X"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/oprand2"
+        android:layout_toEndOf="@+id/oprand2"
+        android:layout_marginStart="14dp"
+        android:id="@+id/textView11" />
+
+    <TextView
+        android:text="="
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_alignBaseline="@+id/oprand1"
+        android:layout_alignBottom="@+id/oprand1"
+        android:layout_toEndOf="@+id/oprand1"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:text="9"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:id="@+id/oprand2"
+        android:layout_below="@+id/correctCount1"
+        android:layout_toEndOf="@+id/correctCount1" />
+
+    <Button
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correct1"
+        android:layout_alignStart="@+id/correct1"
+        android:layout_marginTop="42dp"
+        android:id="@+id/correct4" />
+
+    <Button
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/correct4"
+        android:layout_alignStart="@+id/correct2"
+        android:id="@+id/correct5" />
+
+    <Button
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/correct5"
+        android:layout_alignStart="@+id/correct3"
+        android:id="@+id/correct6" />
+
+    <Button
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correct4"
+        android:layout_alignStart="@+id/correct4"
+        android:layout_marginTop="42dp"
+        android:id="@+id/correct7" />
+
+    <Button
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/correct8"
+        android:layout_alignStart="@+id/correct6"
+        android:id="@+id/correct9" />
+
+    <Button
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correct8"
+        android:layout_alignBaseline="@+id/correct7"
+        android:layout_alignBottom="@+id/correct7"
+        android:layout_alignStart="@+id/correct5" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correctCount1"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:text="9"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/oprand1"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_toStartOf="@+id/textView4" />
+
+    <Button
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correct1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correct3"
+        android:layout_alignBaseline="@+id/correct2"
+        android:layout_alignBottom="@+id/correct2"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correctCount2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/correct2" />
+
+    <TextView
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/correct1" />
+
+    <Button
+        android:text="81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correct2"
+        android:layout_alignBaseline="@+id/correct1"
+        android:layout_alignBottom="@+id/correct1"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
